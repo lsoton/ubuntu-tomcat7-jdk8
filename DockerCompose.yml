@@ -1,0 +1,11 @@
+ubuntu-tomcat7-jdk8:
+    image: lsoton/ubuntu-tomcat7-jdk8
+    container_name: API-Tomcat7
+    volumes:
+    - '/VARIABLE_ENV:/VARIABLE_ENV'
+    ports:
+    - '8580:8080'
+    - '8543:8443'
+    - '8581:80'
+    - '4443:443'
+    - '1622:22'
